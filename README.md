@@ -14,7 +14,7 @@ A Modbus/TCP filter for Linux has made available by Venkat Pothamsetty and Matth
 
 Modbus messages on an Ethernet network employ the following frame format:
 
-![Modbus TCP Packet Format]()
+![Modbus TCP Packet Format](https://github.com/61131/modbusfw/blob/main/images/packet-format.png?raw=true)
 
 Field                  | Length  | Description
 :----------------------|:-------:|:---------------------------------
