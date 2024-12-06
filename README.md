@@ -76,7 +76,7 @@ There are no specific configuration or build requirements for iptables following
 	~/git/modbusfw/src/kernel$
 
 
-The build of the Modbus/TCP filter module is dependent upon Linux kernel source files. The location of these source files can be specified using the environment variable KDIR prior to calling make. If this source location is not specified, the make file will default to looking for these source files in /lib/modules as shown above.
+The build of the Modbus/TCP filter module is dependent upon Linux kernel source files. The location of these source files can be specified using the environment variable KDIR prior to calling make. If this source location is not specified, the make file will default to looking for these source files in the build location employed for the current kernel build (/home/rob/build/kernel/linux-6.8.12 in the example above).
 
 The Modbus/TCP filter module can then be loaded using insmod. Note that this kernel module is dependent upon x_tables functionality and as such, if this module is not loaded or built-in to your kernel image, an unknown symbol error will be returned by insmod. This can be simply corrected by loading x_tables module prior to loading the Modbus/TCP filter module via insmod.
 
